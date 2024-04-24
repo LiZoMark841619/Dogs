@@ -9,6 +9,9 @@ class Dog(Animal):
         super().__init__(self, name, age, color)
         self.kind = 'dog'
         Animal.count()
+        
+    def voice(self):
+        return f'{str(self.kind).title()} barks.'
     
 if __name__ == '__main__':
     my_dog = Dog('Killer', 12, 'brown')
@@ -19,3 +22,4 @@ if __name__ == '__main__':
     print(one, two, three)
     print(Dog.num_of_instance)
     print(Animal.num_of_instance)
+    print(my_dog.voice())
