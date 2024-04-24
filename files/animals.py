@@ -1,5 +1,4 @@
-from abc import ABC
-from abc import abstractmethod
+from abc import ABC, abstractmethod
 from class_tree import instanceTree
 
 class Animal(ABC):
@@ -25,4 +24,5 @@ class Animal(ABC):
     @classmethod
     def count(cls):
         cls.num_of_instance += 1
+        
 if __name__ == '__main__': my_animal_1 = Animal('dog', 'LittleOne', 3, 'brown'); print(my_animal_1); print(Animal.num_of_instance)
