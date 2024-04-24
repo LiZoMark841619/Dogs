@@ -4,5 +4,5 @@ def cls_tree(cls, indent):
         cls_tree(super_cls, indent + 2)
     
 def instanceTree(instance):
-    print(f'Classtre of object {instance._asdict()}: ')
+    print(f'Classtre of object {instance.__dict__}: ')
     cls_tree(instance.__class__, 1)
