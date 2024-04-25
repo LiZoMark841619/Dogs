@@ -12,14 +12,3 @@ class Dog(Animal):
         
     def voice(self):
         return f'{str(self.kind).title()} barks.'
-    
-if __name__ == '__main__':
-    my_dog = Dog('Killer', 12, 'brown')
-    print(my_dog)
-    my_dog()
-    print(Dog.num_of_instance)
-    one, two, three = factory(Dog, 'Killer', 15, 'white'), factory(Dog, 'Tiny', 2, 'black'), factory(Dog, 'Birdy', 2, 'yellow')
-    print(one, two, three)
-    print(Dog.num_of_instance)
-    print(Animal.num_of_instance)
-    print(my_dog.voice())
