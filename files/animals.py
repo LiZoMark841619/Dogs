@@ -19,14 +19,14 @@ class Animal(ABC):
         self.color = color
         self.count()
     
-    def __str__(self):
+    def __str__(self) -> str:
         return f'{self.__class__.__name__}(name: {self.name}, age: {self.age})'
     
     def __call__(self) -> object:
         return instanceTree(self)
     
     @abstractmethod
-    def voice(self):
+    def voice(self) -> str:
         return f'{self.kind} does not have voice'
     
     @classmethod
