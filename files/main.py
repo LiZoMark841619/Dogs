@@ -11,5 +11,5 @@ my_dog = Dog('Killer', 12, 'brown')
 print(my_dog)
 my_dog()
 
-my_animal_1 = Animal('dog', 'LittleOne', 3, 'brown')
-print(my_animal_1)
+# my_animal_1 = Animal('dog', 'LittleOne', 3, 'brown')
+# print(my_animal_1)
